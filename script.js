@@ -146,7 +146,27 @@ document.querySelectorAll(".card").length;
 
 document.getElementById("contador").innerText =
 "Clientes: " + cantidadClientes;
-
+db.ref("clientes").push({
+    nombre,
+    usuario,
+    password,
+    whatsapp,
+    edad,
+    peso,
+    altura,
+    objetivo,
+    lesiones,
+    observaciones,
+    asistencias,
+    ausencias,
+    lunes,
+    martes,
+    miercoles,
+    jueves,
+    viernes,
+    sabado,
+    domingo
+});
 guardarDatos();
 limpiarFormulario();
 }
