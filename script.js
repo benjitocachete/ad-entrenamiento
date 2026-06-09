@@ -430,10 +430,10 @@ let dia =
 document.getElementById("diaSeleccionado").value;
 
 let texto =
-ejercicio + "\n" +
-"Series: " + series + "\n" +
-"Repeticiones: " + repeticiones + "\n" +
-"Descanso: " + descanso + " seg\n\n";
+"🏋️ " + ejercicio.toUpperCase() + "\n\n" +
+"🔁 Series: " + series + "\n" +
+"🎯 Repeticiones: " + repeticiones + "\n" +
+"⏱ Descanso: " + descanso + " seg\n\n";
 
 document.getElementById(dia).value += texto;
 
