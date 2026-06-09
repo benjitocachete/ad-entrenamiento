@@ -279,8 +279,8 @@ let filtro =
 document.getElementById("busqueda")
 .value.toLowerCase();
 
-let tarjetas =
-document.querySelectorAll(".card");
+console.log(document.querySelectorAll(".card").length);
+
 
 tarjetas.forEach(card=>{
 
