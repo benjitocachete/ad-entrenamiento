@@ -95,26 +95,40 @@ ${ausencias}<br><br>
 <h2>📅 Rutina Semanal</h2>
 <h2>📅 Rutina Semanal</h2>
 
-<h3>⬜ Lunes</h3>
-${lunes}<br><br>
+${datos.lunes ? `
+<h3>📅 Lunes</h3>
+<pre>${datos.lunes}</pre>
+` : ""}
 
-<h3>⬜ Martes</h3>
-${martes}<br><br>
+${datos.martes ? `
+<h3>📅 Martes</h3>
+<pre>${datos.martes}</pre>
+` : ""}
 
-<h3>⬜ Miércoles</h3>
-${miercoles}<br><br>
+${datos.miercoles ? `
+<h3>📅 Miércoles</h3>
+<pre>${datos.miercoles}</pre>
+` : ""}
 
-<h3>⬜ Jueves</h3>
-${jueves}<br><br>
+${datos.jueves ? `
+<h3>📅 Jueves</h3>
+<pre>${datos.jueves}</pre>
+` : ""}
 
-<h3>⬜ Viernes</h3>
-${viernes}<br><br>
+${datos.viernes ? `
+<h3>📅 Viernes</h3>
+<pre>${datos.viernes}</pre>
+` : ""}
 
-<h3>⬜ Sábado</h3>
-${sabado}<br><br>
+${datos.sabado ? `
+<h3>📅 Sábado</h3>
+<pre>${datos.sabado}</pre>
+` : ""}
 
-<h3>⬜ Domingo</h3>
-${domingo}<br><br>
+${datos.domingo ? `
+<h3>📅 Domingo</h3>
+<pre>${datos.domingo}</pre>
+` : ""}
 
 <button
 onclick="editarCliente(this)">
