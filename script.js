@@ -1,3 +1,15 @@
+const firebaseConfig = {
+  apiKey: "AIzaSyBsncDyibFxoYoS22ZE1Y7MBBZB2iMwszM",
+  authDomain: "ad-entrenamiento.firebaseapp.com",
+  databaseURL: "https://ad-entrenamiento-default-rtdb.firebaseio.com",
+  projectId: "ad-entrenamiento",
+  storageBucket: "ad-entrenamiento.firebasestorage.app",
+  messagingSenderId: "689233058150",
+  appId: "1:689233058150:web:12315eac0657daf362d0a7"
+};
+
+firebase.initializeApp(firebaseConfig);
+const db = firebase.database();
 let cantidadClientes = 0;
 let clienteEditando = null;
 
