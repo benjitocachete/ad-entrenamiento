@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AD Entrenamiento</title>
+<link rel="manifest" href="manifest.json">
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+<h1>🏋️ AD Entrenamiento</h1>
+</header>
+
+<div id="inicio">
+
+<h2>Ingresar</h2>
+
+<button onclick="mostrarAdmin()">
+Administrador
+</button>
+
+<button onclick="mostrarCliente()">
+Cliente
+</button>
+
+</div>
+
+<div id="admin" class="oculto">
+
+<h2>Panel Administrador</h2>
+
+<input
+type="text"
+id="cliente"
+placeholder="Nombre y apellido">
+
+<input
+type="text"
+id="usuario"
+placeholder="Usuario">
+
+<input
+type="password"
+id="password"
+placeholder="Contraseña">
+
+<input
+type="text"
+id="whatsapp"
+placeholder="WhatsApp (54911...)">
+
+<input
+type="file"
+id="foto"
+accept="image/*">
+
+<input
+type="number"
+id="edad"
+placeholder="Edad">
+
+<input
+type="number"
+id="peso"
+placeholder="Peso (kg)">
+
+<input
+type="number"
+id="altura"
+placeholder="Altura (cm)">
+
+<input
+type="text"
+id="objetivo"
+placeholder="Objetivo">
+
+<input
+type="text"
+id="lesiones"
+placeholder="Lesiones">
+
+<textarea
+id="observaciones"
+placeholder="Observaciones"></textarea>
+
+<input
+type="text"
+id="dias"
+placeholder="Días de entrenamiento">
+<h2>📚 Biblioteca de Ejercicios</h2>
+
+<input
+type="text"
+id="nuevoEjercicio"
+placeholder="Nombre del ejercicio">
+
+<button onclick="agregarEjercicio()">
+Agregar ejercicio
+</button>
+<button onclick="eliminarEjercicio()">
+Eliminar ejercicio seleccionado
+</button>
+<br><br>
+
+<select id="listaEjercicios">
+</select>
+<input type="number" id="series" placeholder="Series">
+
+<input type="number" id="repeticiones" placeholder="Repeticiones">
+
+<input type="text" id="descanso" placeholder="Descanso">
+<select id="diaSeleccionado">
+<option value="lunes">Lunes</option>
+<option value="martes">Martes</option>
+<option value="miercoles">Miércoles</option>
+<option value="jueves">Jueves</option>
+<option value="viernes">Viernes</option>
+<option value="sabado">Sábado</option>
+<option value="domingo">Domingo</option>
+</select>
+<button onclick="agregarEjercicioRutina()">
+Agregar a rutina
+</button>
+<hr>
+<h3>📅 Lunes</h3>
+<textarea id="lunes" placeholder="Rutina del lunes"></textarea>
+
+<h3>📅 Martes</h3>
+<textarea id="martes" placeholder="Rutina del martes"></textarea>
+
+<h3>📅 Miércoles</h3>
+<textarea id="miercoles" placeholder="Rutina del miércoles"></textarea>
+
+<h3>📅 Jueves</h3>
+<textarea id="jueves" placeholder="Rutina del jueves"></textarea>
+
+<h3>📅 Viernes</h3>
+<textarea id="viernes" placeholder="Rutina del viernes"></textarea>
+
+<h3>📅 Sábado</h3>
+<textarea id="sabado" placeholder="Rutina del sábado"></textarea>
+
+<h3>📅 Domingo</h3>
+<textarea id="domingo" placeholder="Rutina del domingo"></textarea>
+ <input
+type="number"
+id="asistencias"
+placeholder="Asistencias">
+
+<input
+type="number"
+id="ausencias"
+placeholder="Ausencias">
+<button onclick="agregarCliente()">
+ 
+Guardar Cliente
+<button onclick="sumarAsistencia()">
+✔ Registrar asistencia
+</button>
+
+<button onclick="sumarAusencia()">
+✘ Registrar ausencia
+</button>
+
+<button onclick="volverInicio()">
+Volver
+</button>
+
+<h3 id="contador">
+Clientes: 0
+</h3>
+
+<input
+type="text"
+id="busqueda"
+placeholder="Buscar cliente"
+onkeyup="buscarCliente()">
+
+<div id="lista"></div>
+
+</div>
+
+<div id="clientePanel" class="oculto">
+
+<h2>Ingreso Cliente</h2>
+
+<input
+type="text"
+id="loginUsuario"
+placeholder="Usuario">
+
+<input
+type="password"
+id="loginPassword"
+placeholder="Contraseña">
+
+<button onclick="ingresarCliente()">
+Ingresar
+</button>
+
+<button onclick="volverInicio()">
+Volver
+</button>
+
+<hr>
+
+<div id="fichaCliente"></div>
+<h2>📊 Seguimiento</h2>
+
+<p>✔ Asistencias: <span id="asistencias">0</span></p>
+
+<p>✘ Ausencias: <span id="ausencias">0</span></p>
+
+<p>📈 Asistencia: <span id="porcentaje">0%</span></p>
+</div>
+
+<script src="script.js"></script>
+<script>
+if ("serviceWorker" in navigator) {
+  navigator.serviceWorker.register("service-worker.js");
+}
+</script>
+
+
+</body>
+</html>
