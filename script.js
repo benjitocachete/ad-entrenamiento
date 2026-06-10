@@ -93,41 +93,29 @@ ${asistencias}<br><br>
 ${ausencias}<br><br>
 
 <h2>📅 Rutina Semanal</h2>
+<h2>📅 Rutina Semanal</h2>
 
-${lunes.trim() ? `
-<h3>📅 Lunes</h3>
-<pre>${lunes}</pre>
-` : ""}
+<h3>⬜ Lunes</h3>
+${lunes}<br><br>
 
-${martes.trim() ? `
-<h3>📅 Martes</h3>
-<pre>${martes}</pre>
-` : ""}
+<h3>⬜ Martes</h3>
+${martes}<br><br>
 
-${miercoles.trim() ? `
-<h3>📅 Miércoles</h3>
-<pre>${miercoles}</pre>
-` : ""}
+<h3>⬜ Miércoles</h3>
+${miercoles}<br><br>
 
-${jueves.trim() ? `
-<h3>📅 Jueves</h3>
-<pre>${jueves}</pre>
-` : ""}
+<h3>⬜ Jueves</h3>
+${jueves}<br><br>
 
-${viernes.trim() ? `
-<h3>📅 Viernes</h3>
-<pre>${viernes}</pre>
-` : ""}
+<h3>⬜ Viernes</h3>
+${viernes}<br><br>
 
-${sabado.trim() ? `
-<h3>📅 Sábado</h3>
-<pre>${sabado}</pre>
-` : ""}
+<h3>⬜ Sábado</h3>
+${sabado}<br><br>
 
-${domingo.trim() ? `
-<h3>📅 Domingo</h3>
-<pre>${domingo}</pre>
-` : ""}
+<h3>⬜ Domingo</h3>
+${domingo}<br><br>
+
 <button
 onclick="editarCliente(this)">
 Editar
@@ -442,10 +430,10 @@ let dia =
 document.getElementById("diaSeleccionado").value;
 
 let texto =
-"🏋️ " + ejercicio.toUpperCase() + "\n\n" +
-"🔁 Series: " + series + "\n" +
-"🎯 Repeticiones: " + repeticiones + "\n" +
-"⏱ Descanso: " + descanso + " seg\n\n";
+ejercicio + "\n" +
+"Series: " + series + "\n" +
+"Repeticiones: " + repeticiones + "\n" +
+"Descanso: " + descanso + " seg\n\n";
 
 document.getElementById(dia).value += texto;
 
