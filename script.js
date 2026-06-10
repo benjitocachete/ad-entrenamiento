@@ -93,41 +93,40 @@ ${asistencias}<br><br>
 ${ausencias}<br><br>
 
 <h2>📅 Rutina Semanal</h2>
-<h2>📅 Rutina Semanal</h2>
 
-${datos.lunes && datos.lunes.trim() ? `
+${lunes.trim() ? `
 <h3>📅 Lunes</h3>
-<pre>${datos.lunes}</pre>
+<pre>${lunes}</pre>
 ` : ""}
 
-${datos.martes && datos.martes.trim() ? `
+${martes.trim() ? `
 <h3>📅 Martes</h3>
-<pre>${datos.martes}</pre>
+<pre>${martes}</pre>
 ` : ""}
 
-${datos.miercoles && datos.miercoles.trim() ? `
+${miercoles.trim() ? `
 <h3>📅 Miércoles</h3>
-<pre>${datos.miercoles}</pre>
+<pre>${miercoles}</pre>
 ` : ""}
 
-${datos.jueves && datos.jueves.trim() ? `
+${jueves.trim() ? `
 <h3>📅 Jueves</h3>
-<pre>${datos.jueves}</pre>
+<pre>${jueves}</pre>
 ` : ""}
 
-${datos.viernes && datos.viernes.trim() ? `
+${viernes.trim() ? `
 <h3>📅 Viernes</h3>
-<pre>${datos.viernes}</pre>
+<pre>${viernes}</pre>
 ` : ""}
 
-${datos.sabado && datos.sabado.trim() ? `
+${sabado.trim() ? `
 <h3>📅 Sábado</h3>
-<pre>${datos.sabado}</pre>
+<pre>${sabado}</pre>
 ` : ""}
 
-${datos.domingo && datos.domingo.trim() ? `
+${domingo.trim() ? `
 <h3>📅 Domingo</h3>
-<pre>${datos.domingo}</pre>
+<pre>${domingo}</pre>
 ` : ""}
 <button
 onclick="editarCliente(this)">
