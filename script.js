@@ -95,41 +95,40 @@ ${ausencias}<br><br>
 <h2>📅 Rutina Semanal</h2>
 <h2>📅 Rutina Semanal</h2>
 
-${datos.lunes ? `
+${datos.lunes && datos.lunes.trim() ? `
 <h3>📅 Lunes</h3>
 <pre>${datos.lunes}</pre>
 ` : ""}
 
-${datos.martes ? `
+${datos.martes && datos.martes.trim() ? `
 <h3>📅 Martes</h3>
 <pre>${datos.martes}</pre>
 ` : ""}
 
-${datos.miercoles ? `
+${datos.miercoles && datos.miercoles.trim() ? `
 <h3>📅 Miércoles</h3>
 <pre>${datos.miercoles}</pre>
 ` : ""}
 
-${datos.jueves ? `
+${datos.jueves && datos.jueves.trim() ? `
 <h3>📅 Jueves</h3>
 <pre>${datos.jueves}</pre>
 ` : ""}
 
-${datos.viernes ? `
+${datos.viernes && datos.viernes.trim() ? `
 <h3>📅 Viernes</h3>
 <pre>${datos.viernes}</pre>
 ` : ""}
 
-${datos.sabado ? `
+${datos.sabado && datos.sabado.trim() ? `
 <h3>📅 Sábado</h3>
 <pre>${datos.sabado}</pre>
 ` : ""}
 
-${datos.domingo ? `
+${datos.domingo && datos.domingo.trim() ? `
 <h3>📅 Domingo</h3>
 <pre>${datos.domingo}</pre>
 ` : ""}
-
 <button
 onclick="editarCliente(this)">
 Editar
